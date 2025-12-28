@@ -1,6 +1,6 @@
-const { NextRequest, NextResponse } = require('next/server');
-const { prisma } = require('../../../../lib/prisma.js');
-const bcrypt = require('bcryptjs');
+import { NextRequest, NextResponse } from 'next/server';
+import { prisma } from '../../../../lib/prisma.js';
+import bcrypt from 'bcryptjs';
 
 // POST /api/auth/reset-password - Reset password with token
 export async function POST(request) {

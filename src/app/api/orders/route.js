@@ -1,5 +1,5 @@
-const { NextRequest, NextResponse } = require('next/server');
-const { prisma } = require('../../../lib/prisma.js');
+import { NextRequest, NextResponse } from 'next/server';
+import { prisma } from '../../../lib/prisma.js';
 
 // GET /api/orders - Get all orders
 export async function GET(request) {

@@ -1,6 +1,6 @@
-const { NextRequest, NextResponse } = require('next/server');
-const { prisma } = require('../../../lib/prisma.js');
-const bcrypt = require('bcryptjs');
+import { NextRequest, NextResponse } from 'next/server';
+import { prisma } from '../../../lib/prisma.js';
+import bcrypt from 'bcryptjs';
 
 // GET /api/users - Get all users (admin only)
 export async function GET() {

@@ -1,4 +1,4 @@
-const { PrismaClient } = require('@prisma/client');
+import { PrismaClient } from '@prisma/client';
 
 const globalForPrisma = global;
 
@@ -8,4 +8,4 @@ if (!globalForPrisma.prisma) {
 
 const prisma = globalForPrisma.prisma;
 
-module.exports = { prisma };
+export { prisma };

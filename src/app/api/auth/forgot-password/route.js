@@ -1,6 +1,6 @@
-const { NextRequest, NextResponse } = require('next/server');
-const { prisma } = require('../../../../lib/prisma.js');
-const crypto = require('crypto');
+import { NextRequest, NextResponse } from 'next/server';
+import { prisma } from '../../../../lib/prisma.js';
+import crypto from 'crypto';
 
 // POST /api/auth/forgot-password - Request password reset
 export async function POST(request) {

@@ -1,7 +1,7 @@
-const { NextRequest, NextResponse } = require('next/server');
-const { prisma } = require('../../../../lib/prisma.js');
-const jwt = require('jsonwebtoken');
-const bcrypt = require('bcryptjs');
+import { NextRequest, NextResponse } from 'next/server';
+import { prisma } from '../../../../lib/prisma.js';
+import jwt from 'jsonwebtoken';
+import bcrypt from 'bcryptjs';
 
 export async function POST(request) {
   try {
